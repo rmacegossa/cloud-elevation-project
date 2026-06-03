@@ -694,7 +694,7 @@ const QuemSomos = () => {
                 </p>
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                   <Button variant="heroShiny" size="xl" asChild>
-                    <a href="https://wa.me/5511991664976" target="_blank" rel="noopener noreferrer">
+                    <a href="https://wa.me/5511932177281" target="_blank" rel="noopener noreferrer">
                       {t("hero.cta.primary")}
                       <ArrowRight className="h-5 w-5 ml-2 inline" />
                     </a>

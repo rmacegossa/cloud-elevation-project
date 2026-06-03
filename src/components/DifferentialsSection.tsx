@@ -239,7 +239,7 @@ export function DifferentialsSection() {
             className="px-8 py-6 text-base gap-2"
             asChild
           >
-            <a href="https://wa.me/5511991664976" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/5511932177281" target="_blank" rel="noopener noreferrer">
               <Zap className="h-5 w-5" />
               {t("diff.cta.button")}
             </a>

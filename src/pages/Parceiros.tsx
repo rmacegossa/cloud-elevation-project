@@ -243,7 +243,7 @@ const Parceiros = () => {
                     whileTap={{ scale: 0.95 }}
                   >
                     <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg relative overflow-hidden group" asChild>
-                      <a href="https://wa.me/5511991664976" target="_blank" rel="noopener noreferrer">
+                      <a href="https://wa.me/5511932177281" target="_blank" rel="noopener noreferrer">
                         <motion.div
                           className="absolute inset-0 bg-white/20"
                           initial={{ x: "-100%" }}
@@ -260,7 +260,7 @@ const Parceiros = () => {
                     whileTap={{ scale: 0.95 }}
                   >
                     <Button size="lg" variant="outline" className="border-2 border-accent bg-accent/20 text-accent hover:bg-accent hover:text-accent-foreground shadow-md font-semibold" asChild>
-                      <a href="https://wa.me/5511991664976" target="_blank" rel="noopener noreferrer">
+                      <a href="https://wa.me/5511932177281" target="_blank" rel="noopener noreferrer">
                         <Mail className="mr-2 h-5 w-5" />
                         {t("parceiros.hero.cta.proposal")}
                       </a>
@@ -795,7 +795,7 @@ const Parceiros = () => {
                     whileTap={{ scale: 0.95 }}
                   >
                     <Button size="lg" variant="outline" className="border-2 border-accent text-accent hover:bg-accent hover:text-accent-foreground" asChild>
-                      <a href="https://wa.me/5511991664976" target="_blank" rel="noopener noreferrer">
+                      <a href="https://wa.me/5511932177281" target="_blank" rel="noopener noreferrer">
                         <MessageCircle className="mr-2 h-5 w-5" />
                         WhatsApp
                       </a>

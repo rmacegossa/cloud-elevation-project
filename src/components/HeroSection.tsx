@@ -52,7 +52,7 @@ export function HeroSection() {
               className="bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-6 text-base font-semibold rounded-lg transition-all duration-300 group"
               asChild
             >
-              <a href="https://wa.me/5511991664976" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/5511932177281" target="_blank" rel="noopener noreferrer">
                 {t("hero.cta.primary")}
                 <ArrowUpRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
               </a>
@@ -63,7 +63,7 @@ export function HeroSection() {
               className="border border-foreground/20 bg-background hover:bg-foreground/5 px-8 py-6 text-base font-semibold rounded-lg transition-all duration-300 group"
               asChild
             >
-              <a href="https://wa.me/5511991664976" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/5511932177281" target="_blank" rel="noopener noreferrer">
                 {t("hero.cta.secondary")}
                 <ArrowUpRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
               </a>

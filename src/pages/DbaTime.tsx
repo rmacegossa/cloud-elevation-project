@@ -110,7 +110,7 @@ const DbaTime = () => {
                     asChild
                   >
                     <a
-                      href="https://wa.me/5511991664976"
+                      href="https://wa.me/5511932177281"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -125,7 +125,7 @@ const DbaTime = () => {
                     asChild
                   >
                     <a
-                      href="https://wa.me/5511991664976"
+                      href="https://wa.me/5511932177281"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -470,7 +470,7 @@ const DbaTime = () => {
                     asChild
                   >
                     <a
-                      href="https://wa.me/5511991664976"
+                      href="https://wa.me/5511932177281"
                       target="_blank"
                       rel="noopener noreferrer"
                     >

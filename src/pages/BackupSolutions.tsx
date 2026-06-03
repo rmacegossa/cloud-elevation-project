@@ -186,7 +186,7 @@ export default function BackupSolutions() {
 
                   <motion.div variants={fadeInUp} className="flex flex-col sm:flex-row gap-4 mb-8">
                     <Button variant="heroShiny" size="lg" className="px-8 py-6 text-base gap-2" asChild>
-                      <a href="https://wa.me/5511991664976" target="_blank" rel="noopener noreferrer">
+                      <a href="https://wa.me/5511932177281" target="_blank" rel="noopener noreferrer">
                         <Zap className="h-5 w-5" />
                         {t("common.hero.cta")}
                       </a>
@@ -638,7 +638,7 @@ export default function BackupSolutions() {
                   className="flex flex-col sm:flex-row gap-4 justify-center"
                 >
                   <Button variant="heroShiny" size="lg" className="px-8 py-6 text-base gap-2" asChild>
-                    <a href="https://wa.me/5511991664976" target="_blank" rel="noopener noreferrer">
+                    <a href="https://wa.me/5511932177281" target="_blank" rel="noopener noreferrer">
                       <Zap className="h-5 w-5" />
                       {t("common.hero.cta")}
                     </a>

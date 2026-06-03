@@ -184,7 +184,7 @@ export default function SecuritySolutions() {
                     className="flex flex-col sm:flex-row items-start gap-4 mb-8"
                   >
                     <Button variant="heroShiny" size="lg" className="px-8 py-6 text-base gap-2" asChild>
-                      <a href="https://wa.me/5511991664976" target="_blank" rel="noopener noreferrer">
+                      <a href="https://wa.me/5511932177281" target="_blank" rel="noopener noreferrer">
                         <Zap className="h-5 w-5" />
                         {t("common.hero.cta")}
                       </a>
@@ -615,7 +615,7 @@ export default function SecuritySolutions() {
               >
                 <motion.div variants={fadeInUp}>
                   <Button variant="heroShiny" size="lg" className="px-8 py-6 text-base gap-2" asChild>
-                    <a href="https://wa.me/5511991664976" target="_blank" rel="noopener noreferrer">
+                    <a href="https://wa.me/5511932177281" target="_blank" rel="noopener noreferrer">
                       <Zap className="h-5 w-5" />
                       {t("common.hero.cta")}
                     </a>

@@ -95,13 +95,13 @@ const OQueFazemos = () => {
                   </motion.p>
                   <motion.div variants={fadeInUp} className="flex flex-wrap gap-4">
                     <Button size="lg" className="gap-2 bg-primary text-primary-foreground hover:bg-primary/90" asChild>
-                      <a href="https://wa.me/5511991664976" target="_blank" rel="noopener noreferrer">
+                      <a href="https://wa.me/5511932177281" target="_blank" rel="noopener noreferrer">
                         {t("oquefazemos.hero.cta.primary")}
                         <ArrowRight className="h-4 w-4" />
                       </a>
                     </Button>
                     <Button size="lg" variant="outline" className="gap-2 border-2 border-border bg-background/50 hover:bg-background/80" asChild>
-                      <a href="https://wa.me/5511991664976" target="_blank" rel="noopener noreferrer">
+                      <a href="https://wa.me/5511932177281" target="_blank" rel="noopener noreferrer">
                         {t("common.talk.expert")}
                       </a>
                     </Button>

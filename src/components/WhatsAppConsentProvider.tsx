@@ -14,7 +14,7 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { Label } from "@/components/ui/label";
 import { cn } from "@/lib/utils";
 
-const DEFAULT_WHATSAPP_URL = "https://wa.me/5511991664976";
+const DEFAULT_WHATSAPP_URL = "https://wa.me/5511932177281";
 
 type WhatsAppConsentContextValue = {
   openWhatsApp: (url?: string) => void;

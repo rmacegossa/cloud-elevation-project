@@ -284,19 +284,19 @@ export function MegaMenu({ isOpen, onClose, onMouseEnter, variant }: MegaMenuPro
           {
             title: "Falar com Especialista",
             description: "Converse com nossos especialistas sobre suas necessidades",
-            href: "https://wa.me/5511991664976",
+            href: "https://wa.me/5511932177281",
             icon: Phone,
           },
           {
             title: "Solicitar Orçamento",
             description: "Solicite uma cotação personalizada para sua empresa",
-            href: "https://wa.me/5511991664976",
+            href: "https://wa.me/5511932177281",
             icon: Mail,
           },
           {
             title: "Avaliação Gratuita",
             description: "Teste nossos serviços por 30 dias sem custo",
-            href: "https://wa.me/5511991664976",
+            href: "https://wa.me/5511932177281",
             icon: Handshake,
           },
         ],

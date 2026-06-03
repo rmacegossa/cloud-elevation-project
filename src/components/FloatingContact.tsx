@@ -13,7 +13,7 @@ export function FloatingContact() {
       icon: MessageCircle,
       label: t("float.whatsapp"),
       description: t("float.whatsapp.desc"),
-      href: "https://wa.me/5511991664976",
+      href: "https://wa.me/5511932177281",
       color: "bg-green-500 hover:bg-green-600",
     },
     {

@@ -368,7 +368,7 @@ const Contact = () => {
                         <Facebook className="h-5 w-5 text-foreground" />
                       </a>
                       <a
-                        href="https://wa.me/551125777899"
+                        href="https://wa.me/5511932177281"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex h-12 w-12 items-center justify-center rounded-lg border border-border bg-card transition-all hover:bg-primary/10 hover:border-primary"

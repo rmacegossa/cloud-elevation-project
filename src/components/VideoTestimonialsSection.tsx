@@ -130,7 +130,7 @@ export function VideoTestimonialsSection() {
         >
           <p className="text-muted-foreground">
             Quer fazer parte dessa história?{" "}
-            <a href="https://wa.me/5511991664976" target="_blank" rel="noopener noreferrer" className="text-primary font-medium hover:underline">
+            <a href="https://wa.me/5511932177281" target="_blank" rel="noopener noreferrer" className="text-primary font-medium hover:underline">
               Fale com nossa equipe
             </a>
           </p>

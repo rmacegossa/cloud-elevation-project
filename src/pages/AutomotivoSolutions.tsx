@@ -156,13 +156,13 @@ export default function AutomotivoSolutions() {
 
                   <motion.div variants={fadeInUp} className="flex flex-col sm:flex-row gap-4 mb-8">
                     <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg" asChild>
-                      <a href="https://wa.me/5511991664976" target="_blank" rel="noopener noreferrer">
+                      <a href="https://wa.me/5511932177281" target="_blank" rel="noopener noreferrer">
                         <Phone className="mr-2 h-5 w-5" />
                         {t("common.talk.expert")}
                       </a>
                     </Button>
                     <Button size="lg" variant="outline" className="border-2 border-accent text-accent hover:bg-accent hover:text-accent-foreground" asChild>
-                      <a href="https://wa.me/5511991664976" target="_blank" rel="noopener noreferrer">
+                      <a href="https://wa.me/5511932177281" target="_blank" rel="noopener noreferrer">
                         <Calendar className="mr-2 h-5 w-5" />
                         {t("common.request.poc30")}
                       </a>
@@ -425,13 +425,13 @@ export default function AutomotivoSolutions() {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg" asChild>
-                    <a href="https://wa.me/5511991664976" target="_blank" rel="noopener noreferrer">
+                    <a href="https://wa.me/5511932177281" target="_blank" rel="noopener noreferrer">
                       <Phone className="mr-2 h-5 w-5" />
                       {t("common.talk.expert")}
                     </a>
                   </Button>
                   <Button size="lg" variant="outline" className="border-2 border-accent text-accent hover:bg-accent hover:text-accent-foreground" asChild>
-                    <a href="https://wa.me/5511991664976" target="_blank" rel="noopener noreferrer">
+                    <a href="https://wa.me/5511932177281" target="_blank" rel="noopener noreferrer">
                       <Calendar className="mr-2 h-5 w-5" />
                       {t("common.request.poc30")}
                     </a>

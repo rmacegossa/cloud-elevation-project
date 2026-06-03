@@ -252,7 +252,7 @@ export function Header() {
             <LanguageSelector />
             <ThemeToggle />
             <Button variant="default" size="sm" className="text-xs" asChild>
-              <a href="https://wa.me/5511991664976" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/5511932177281" target="_blank" rel="noopener noreferrer">
                 {t("nav.cta")}
               </a>
             </Button>
@@ -338,7 +338,7 @@ export function Header() {
                 <a href="/quem-somos" className="text-sm font-medium text-foreground">Quem Somos</a>
                 <a href="/contato" className="text-sm font-medium text-foreground">Contato</a>
                 <Button variant="default" className="mt-2 w-full text-xs" asChild>
-                  <a href="https://wa.me/5511991664976" target="_blank" rel="noopener noreferrer">
+                  <a href="https://wa.me/5511932177281" target="_blank" rel="noopener noreferrer">
                     {t("nav.cta")}
                   </a>
                 </Button>
