@@ -1,6 +1,5 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { FloatingContact } from "@/components/FloatingContact";
 import { motion } from "framer-motion";
 import { Shield, Building2, Users, Award, TrendingUp, CheckCircle2 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
@@ -1483,7 +1482,6 @@ const PoliticasPrivacidade = () => {
         </main>
       </div>
       <Footer />
-      <FloatingContact />
     </div>
   );
 };

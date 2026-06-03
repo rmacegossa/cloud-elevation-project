@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import { Shield, Lock, Server, Hotel, CheckCircle2, ArrowRight, Phone, Calendar, Zap, Users, Clock, Settings, Database, Cloud } from "lucide-react";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { FloatingContact } from "@/components/FloatingContact";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -432,7 +431,6 @@ export default function HotelariaSolutions() {
         </div>
       </main>
       <Footer />
-      <FloatingContact />
     </div>
   );
 }

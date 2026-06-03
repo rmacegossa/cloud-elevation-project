@@ -1,6 +1,5 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { FloatingContact } from "@/components/FloatingContact";
 import { motion } from "framer-motion";
 import { Sparkles, Shield, Zap, Users, Clock, CheckCircle2, Award, TrendingUp, Server, Building2 } from "lucide-react";
 import { useI18n } from "@/lib/i18n";
@@ -232,7 +231,6 @@ const ComoFazemos = () => {
         </main>
       </div>
       <Footer />
-      <FloatingContact />
     </div>
   );
 };

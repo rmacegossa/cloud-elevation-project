@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { FloatingContact } from "@/components/FloatingContact";
 import { motion, AnimatePresence } from "framer-motion";
 import { useI18n } from "@/lib/i18n";
 import { Building2, Users, Award, Shield, Zap, Users2, Briefcase, TrendingUp, ArrowRight, Check, Cloud, Linkedin } from "lucide-react";
@@ -712,7 +711,6 @@ const QuemSomos = () => {
         </main>
       </div>
       <Footer />
-      <FloatingContact />
     </div>
   );
 };

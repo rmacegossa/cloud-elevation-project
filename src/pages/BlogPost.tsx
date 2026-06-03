@@ -1,7 +1,6 @@
 import { useParams, Link, Navigate } from "react-router-dom";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { FloatingContact } from "@/components/FloatingContact";
 import { motion } from "framer-motion";
 import { Calendar, User, ExternalLink } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
@@ -158,7 +157,6 @@ const BlogPost = () => {
         </main>
       </div>
       <Footer />
-      <FloatingContact />
     </div>
   );
 };

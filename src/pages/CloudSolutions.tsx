@@ -3,7 +3,6 @@ import { memo, useRef } from "react";
 import { Shield, Lock, Server, Cloud, HardDrive, CheckCircle2, Gift, ArrowRight, Phone, Calendar, Zap, Globe, Gauge, Award, Users, Rocket, BarChart3, Clock, Settings, Building2, ClipboardList, FileCheck, TrendingUp, Headphones } from "lucide-react";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { FloatingContact } from "@/components/FloatingContact";
 import { PartnersCarousel } from "@/components/PartnersCarousel";
 import { GlowCard } from "@/components/ui/spotlight-card";
 import { BorderRotate } from "@/components/ui/animated-gradient-border";
@@ -892,7 +891,6 @@ export default function CloudSolutions() {
       <div className="relative z-20">
       <Footer />
       </div>
-      <FloatingContact />
     </div>
   );
 }

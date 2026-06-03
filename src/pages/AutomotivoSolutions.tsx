@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import { Shield, Server, Car, CheckCircle2, ArrowRight, Phone, Calendar, Zap, Users, Clock, Settings, Database, Cloud, Wrench } from "lucide-react";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { FloatingContact } from "@/components/FloatingContact";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -444,7 +443,6 @@ export default function AutomotivoSolutions() {
         </div>
       </main>
       <Footer />
-      <FloatingContact />
     </div>
   );
 }

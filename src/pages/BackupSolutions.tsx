@@ -3,7 +3,6 @@ import { HardDrive, Shield, Clock, RotateCcw, Lock, CheckCircle2, ArrowRight, Za
 import { Header } from "@/components/Header";
 import backgroundBackup from "@/assets/background-backup.png";
 import { Footer } from "@/components/Footer";
-import { FloatingContact } from "@/components/FloatingContact";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -653,7 +652,6 @@ export default function BackupSolutions() {
       <div className="relative z-20">
         <Footer />
       </div>
-      <FloatingContact />
     </div>
   );
 }

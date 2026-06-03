@@ -1,6 +1,5 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { FloatingContact } from "@/components/FloatingContact";
 import { motion } from "framer-motion";
 import { Phone, Mail, MapPin, Linkedin, Instagram, Facebook, MessageCircle, CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -386,7 +385,6 @@ const Contact = () => {
         </section>
       </main>
       <Footer />
-      <FloatingContact />
     </div>
   );
 };

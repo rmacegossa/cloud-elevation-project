@@ -7,7 +7,6 @@ import { TeamSection } from "@/components/TeamSection";
 import { TechnologiesCarousel } from "@/components/TechnologiesCarousel";
 import { CTASection } from "@/components/CTASection";
 import { Footer } from "@/components/Footer";
-import { FloatingContact } from "@/components/FloatingContact";
 import { motion } from "framer-motion";
 import { Badge } from "@/components/ui/badge";
 import backgroundTecnologias from "@/assets/background-tecnologias.png";
@@ -108,7 +107,6 @@ const Index = () => {
         <CTASection />
       </main>
       <Footer />
-      <FloatingContact />
     </div>
   );
 };

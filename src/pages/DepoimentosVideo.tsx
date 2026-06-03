@@ -1,6 +1,5 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { FloatingContact } from "@/components/FloatingContact";
 import { motion } from "framer-motion";
 import { Video, Building2, Users, Award, TrendingUp } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
@@ -194,7 +193,6 @@ const DepoimentosVideo = () => {
         </main>
       </div>
       <Footer />
-      <FloatingContact />
     </div>
   );
 };

@@ -1,6 +1,5 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { FloatingContact } from "@/components/FloatingContact";
 import { motion } from "framer-motion";
 import {
   Database,
@@ -486,7 +485,6 @@ const DbaTime = () => {
         </main>
       </div>
       <Footer />
-      <FloatingContact />
     </div>
   );
 };

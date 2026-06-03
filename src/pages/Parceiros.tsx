@@ -1,6 +1,5 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { FloatingContact } from "@/components/FloatingContact";
 import { SectionDivider } from "@/components/SectionDivider";
 import { motion } from "framer-motion";
 import { Handshake, Users, TrendingUp, Award, CheckCircle2, Phone, Mail, MessageCircle, Zap, Shield, Clock, Building2, ArrowRight, Star, Users2, Headphones } from "lucide-react";
@@ -818,7 +817,6 @@ const Parceiros = () => {
         </div>
       </main>
       <Footer />
-      <FloatingContact />
     </div>
   );
 };

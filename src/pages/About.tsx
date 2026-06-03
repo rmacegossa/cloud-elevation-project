@@ -1,6 +1,5 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { FloatingContact } from "@/components/FloatingContact";
 import { MetricsSection } from "@/components/MetricsSection";
 import { VideoTestimonialsSection } from "@/components/VideoTestimonialsSection";
 import { TestimonialsSection } from "@/components/TestimonialsSection";
@@ -627,7 +626,6 @@ const About = () => {
       <div className="relative z-20 bg-card">
         <Footer />
       </div>
-      <FloatingContact />
     </div>
   );
 };

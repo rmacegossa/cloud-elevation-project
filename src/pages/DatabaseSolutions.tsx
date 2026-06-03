@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import { Shield, Lock, Database, Server, Cloud, CheckCircle2, Gift, ArrowRight, Phone, Calendar, Zap, Activity, TrendingUp, Users, Settings, AlertTriangle, BarChart3, Clock, Code2, Cpu, HardDrive } from "lucide-react";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { FloatingContact } from "@/components/FloatingContact";
 import backgroundBancoDeDados from "@/assets/background-banco-de-dados.png";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -729,7 +728,6 @@ export default function DatabaseSolutions() {
       <div className="relative z-20">
         <Footer />
       </div>
-      <FloatingContact />
     </div>
   );
 }
