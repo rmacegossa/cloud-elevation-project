@@ -3,6 +3,7 @@ import imgInfraestruturaErp from "@/assets/artigo2.jpg";
 import imgHotelariaDigital from "@/assets/artigo3.jpg";
 import imgInfraestruturaAgro from "@/assets/socios/gustavo.jpeg";
 import imgCloudHotelaria from "@/assets/cloud-de-alta-performance.jpg";
+import imgMdsTalkEp3 from "@/assets/mds-talk-ep3.jpg";
 
 export type BodyBlock =
   | { type: "paragraph"; content: string }
@@ -24,9 +25,24 @@ export interface BlogPostData {
   imagePosition?: "top" | "center" | "bottom";
   /** Conteúdo completo da matéria (quando disponível) */
   body?: BodyBlock[];
+  /** ID do vídeo no YouTube — quando presente, o card abre um player embutido em vez de navegar */
+  videoId?: string;
 }
 
 export const blogPosts: BlogPostData[] = [
+  {
+    slug: "mds-talk-ep3-cenario-cloud-brasil-mundo",
+    title: "MDS Talk #03 — Cenário Cloud Brasil e Mundo",
+    excerpt:
+      "Tendências, desafios e o futuro da nuvem: neste episódio do MDS Talk, recebemos Alexandro Castelli, VP de Comunicação e Marketing da Abracloud e Conselheiro Sênior de Vendas da SC Clouds, para um bate-papo sobre o cenário cloud no Brasil e no mundo.",
+    date: "31 Jul 2026",
+    author: "MDS Talk",
+    category: "Podcast",
+    image: imgMdsTalkEp3,
+    externalUrl: "https://youtu.be/145YZWK7tQk",
+    source: "YouTube",
+    videoId: "145YZWK7tQk",
+  },
   {
     slug: "cloud-alta-performance-impulsiona-hotelaria",
     title: "Cloud de alta performance impulsiona hotelaria",

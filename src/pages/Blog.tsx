@@ -1,9 +1,11 @@
+import { useState } from "react";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { motion } from "framer-motion";
-import { FileText, Calendar, User, ArrowRight } from "lucide-react";
+import { FileText, Calendar, User, ArrowRight, Play } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { blogPosts } from "@/data/blogPosts";
 
 const fadeInUp = {
@@ -22,6 +24,8 @@ const staggerContainer = {
 };
 
 const Blog = () => {
+  const [activeVideoId, setActiveVideoId] = useState<string | null>(null);
+
   return (
     <div className="min-h-screen bg-background overflow-x-hidden">
       <Header />
@@ -73,52 +77,95 @@ const Blog = () => {
                 variants={staggerContainer}
                 className="grid md:grid-cols-2 lg:grid-cols-3 gap-6"
               >
-                {blogPosts.map((post, index) => (
-                  <motion.div key={post.slug} variants={fadeInUp}>
-                    <Card className="h-full border border-border hover:border-primary/50 transition-all hover:shadow-lg overflow-hidden">
-                      <a href={post.externalUrl} target="_blank" rel="noopener noreferrer" className="block">
-                        <div className="aspect-video w-full overflow-hidden bg-muted">
-                          <img
-                            src={post.image}
-                            alt=""
-                            className={`h-full w-full object-cover ${post.imagePosition === "top" ? "object-top" : post.imagePosition === "bottom" ? "object-bottom" : "object-center"}`}
-                          />
+                {blogPosts.map((post, index) => {
+                  const cardBody = (
+                    <>
+                      <div className="aspect-video w-full overflow-hidden bg-muted relative">
+                        <img
+                          src={post.image}
+                          alt=""
+                          className={`h-full w-full object-cover ${post.imagePosition === "top" ? "object-top" : post.imagePosition === "bottom" ? "object-bottom" : "object-center"}`}
+                        />
+                        {post.videoId && (
+                          <div className="absolute inset-0 flex items-center justify-center bg-background/20 group-hover:bg-background/30 transition-colors">
+                            <div className="flex h-14 w-14 items-center justify-center rounded-full bg-primary/90 text-primary-foreground shadow-lg transition-transform group-hover:scale-110">
+                              <Play className="h-6 w-6 ml-1" fill="currentColor" />
+                            </div>
+                          </div>
+                        )}
+                      </div>
+                      <CardHeader>
+                        <div className="flex items-center gap-2 mb-3">
+                          <Badge variant="outline" className="text-xs">
+                            {post.category}
+                          </Badge>
                         </div>
-                        <CardHeader>
-                          <div className="flex items-center gap-2 mb-3">
-                            <Badge variant="outline" className="text-xs">
-                              {post.category}
-                            </Badge>
+                        <CardTitle className="text-foreground mb-3">{post.title}</CardTitle>
+                        <CardDescription className="text-base leading-relaxed mb-4">
+                          {post.excerpt}
+                        </CardDescription>
+                      </CardHeader>
+                      <CardContent>
+                        <div className="flex items-center justify-between text-sm text-muted-foreground">
+                          <div className="flex items-center gap-4">
+                            <Calendar className="h-4 w-4" />
+                            <span>{post.date}</span>
                           </div>
-                          <CardTitle className="text-foreground mb-3">{post.title}</CardTitle>
-                          <CardDescription className="text-base leading-relaxed mb-4">
-                            {post.excerpt}
-                          </CardDescription>
-                        </CardHeader>
-                        <CardContent>
-                          <div className="flex items-center justify-between text-sm text-muted-foreground">
-                            <div className="flex items-center gap-4">
-                              <Calendar className="h-4 w-4" />
-                              <span>{post.date}</span>
-                            </div>
-                            <div className="flex items-center gap-2">
-                              <User className="h-4 w-4" />
-                              <span>{post.author}</span>
-                            </div>
+                          <div className="flex items-center gap-2">
+                            <User className="h-4 w-4" />
+                            <span>{post.author}</span>
                           </div>
-                          <span className="mt-4 flex items-center gap-2 text-primary hover:text-primary/80 transition-colors text-sm font-medium">
-                            Ler mais <ArrowRight className="h-4 w-4" />
-                          </span>
-                        </CardContent>
-                      </a>
-                    </Card>
-                  </motion.div>
-                ))}
+                        </div>
+                        <span className="mt-4 flex items-center gap-2 text-primary hover:text-primary/80 transition-colors text-sm font-medium">
+                          {post.videoId ? "Assistir" : "Ler mais"} <ArrowRight className="h-4 w-4" />
+                        </span>
+                      </CardContent>
+                    </>
+                  );
+
+                  return (
+                    <motion.div key={post.slug} variants={fadeInUp}>
+                      <Card className="h-full border border-border hover:border-primary/50 transition-all hover:shadow-lg overflow-hidden group">
+                        {post.videoId ? (
+                          <button
+                            type="button"
+                            onClick={() => setActiveVideoId(post.videoId!)}
+                            className="block w-full text-left"
+                          >
+                            {cardBody}
+                          </button>
+                        ) : (
+                          <a href={post.externalUrl} target="_blank" rel="noopener noreferrer" className="block">
+                            {cardBody}
+                          </a>
+                        )}
+                      </Card>
+                    </motion.div>
+                  );
+                })}
               </motion.div>
             </div>
           </section>
         </main>
       </div>
+
+      <Dialog open={!!activeVideoId} onOpenChange={(open) => !open && setActiveVideoId(null)}>
+        <DialogContent className="max-w-3xl p-0 overflow-hidden bg-black border-border">
+          <DialogTitle className="sr-only">Vídeo</DialogTitle>
+          {activeVideoId && (
+            <div className="aspect-video w-full">
+              <iframe
+                src={`https://www.youtube.com/embed/${activeVideoId}?autoplay=1`}
+                title="Player de vídeo"
+                className="h-full w-full"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
+          )}
+        </DialogContent>
+      </Dialog>
+
       <Footer />
     </div>
   );
