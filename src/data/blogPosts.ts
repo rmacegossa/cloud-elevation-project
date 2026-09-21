@@ -4,6 +4,7 @@ import imgHotelariaDigital from "@/assets/artigo3.jpg";
 import imgInfraestruturaAgro from "@/assets/socios/gustavo.jpeg";
 import imgCloudHotelaria from "@/assets/cloud-de-alta-performance.jpg";
 import imgMdsTalkEp3 from "@/assets/mds-talk-ep3.jpg";
+import imgParceriaZucchetti from "@/assets/parceria-zucchetti.jpg";
 
 export type BodyBlock =
   | { type: "paragraph"; content: string }
@@ -30,6 +31,18 @@ export interface BlogPostData {
 }
 
 export const blogPosts: BlogPostData[] = [
+  {
+    slug: "mds-cloud-parceria-zucchetti-brasil",
+    title: "MDS Cloud anuncia parceria com a Zucchetti Brasil",
+    excerpt:
+      "A MDS Cloud Solutions firma parceria com a Zucchetti Brasil, referência global em soluções de ERP, unindo infraestrutura de cloud de alta performance à tecnologia de gestão empresarial para entregar mais eficiência e segurança aos clientes dos dois grupos.",
+    date: "21 Set 2026",
+    author: "MDS Cloud",
+    category: "Parcerias",
+    image: imgParceriaZucchetti,
+    externalUrl: "https://www.instagram.com/p/DdjhgIvtlFb/",
+    source: "Instagram",
+  },
   {
     slug: "mds-talk-ep3-cenario-cloud-brasil-mundo",
     title: "MDS Talk #03 — Cenário Cloud Brasil e Mundo",
